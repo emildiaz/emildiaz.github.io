@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
