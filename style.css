@@ -1,16 +1,51 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-nav ul {
-    width: 20vw;
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-}
-
+/* Set up nav bar */
 header {
+    box-shadow: 0 2px 15px 0 black;
+}
+nav {
+    display: flex;
+    width: 90%;
+    min-height: 8vh;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: black;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+
+.nav-links{
     display: flex;
     justify-content: space-between;
+    list-style: none;
+    width: 30%;
+}
+
+.nav-links li {
+    color: white;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px; 
+}
+
+/* Decorate body */
+.hook{
+    min-height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
