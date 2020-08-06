@@ -4,10 +4,23 @@
     box-sizing: border-box;
 }
 
+/* Fix scroll bar functinality */
+* {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+    display: none; 
+}
+
 /* Set up nav bar */
 header {
     box-shadow: 0 2px 15px 0 black;
+    position: fixed;
+    width: 100%
 }
+
 nav {
     display: flex;
     width: 90%;
@@ -44,8 +57,37 @@ nav {
 
 /* Decorate body */
 .hook{
-    min-height: 92vh;
+    /* background-image: linear-gradient(gray, black); */
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+/* About me */
+#about-me{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#about-me img {
+}
+
+#about-me .article{
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical-line {
+    /* position: absolute; */
+    border-left: 1px solid black;
+    height: 50%;
+}
+
+
+
