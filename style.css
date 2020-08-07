@@ -32,12 +32,14 @@ nav {
     align-items: center;
 }
 
-
 .logo {
-    color: black;
     font-size: 20px;
     letter-spacing: 3px;
     font-weight: bolder;
+}
+.logo a{
+    text-decoration: none;
+    color: black;
 }
 
 .nav-links{
@@ -54,7 +56,7 @@ nav {
     letter-spacing: 1px; 
 }
 
-.logo:hover {
+.logo a:hover {
     color: orange;
     cursor: pointer;
 }
