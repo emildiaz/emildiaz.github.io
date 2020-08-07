@@ -17,23 +17,24 @@ html::-webkit-scrollbar {
 
 /* Set up nav bar */
 header {
-    background-color: white;
+    height: 100vh;
+    /* background-color: white;
     box-shadow: 0 2px 15px 0 black;
     position: fixed;
-    width: 100%
+    width: 100% */
 }
 
 nav {
     display: flex;
     width: 90%;
-    min-height: 8vh;
+    height: 100%;
     margin: auto;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .logo {
-    font-size: 20px;
+    font-size: 10rem;
     letter-spacing: 3px;
     font-weight: bolder;
 }
@@ -43,10 +44,14 @@ nav {
 }
 
 .nav-links{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
+    height: 50%;
     width: 30%;
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
 }
 
 .nav-links a {
@@ -54,6 +59,7 @@ nav {
     color: black;
     font-weight: bold;
     letter-spacing: 1px; 
+    transition: font-size 0.2s ease;
 }
 
 .logo a:hover {
@@ -63,6 +69,8 @@ nav {
 
 .nav-links a:hover {
     color: orange;
+    transform: translate(300px);
+    font-size: 5.5rem;
 }
 
 
